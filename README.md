@@ -15,6 +15,8 @@ In this project, I used:
 2. Logger for efficient debugging and error tracking.
 3. `FileChannel` for I/O operations to support backup and restoration for various types of files (`.txt`, `.jpg`, `.png`, `.mp4`, `.mp3`, etc.).
 
+## Input 
+I have given the source file path and the restore file path(which will be empty initially) as command line arguments.
 ## Working of the Code
 
 ### 1. Backup Process
