@@ -50,6 +50,15 @@ I have given the source file path and the restore file path(which will be empty 
 - The program uses multiple threads to process chunks of the file in parallel.
 - The number of threads is determined by the number of CPU cores available on your system (e.g., if your system has 4 cores, it will use 4 threads).
 - Java's `ExecutorService` is used to manage these threads efficiently.
-### Output :
-Using a single Thread -
-![Screenshot](./Screenshot 2025-03-23 031603.png)
+### Output :-
+I used a 1GB source file.
+- Using a single thread :<br>  
+![Screenshot](./Screenshot%202025-03-23%20031603.png)
+
+- Using multithreading :<br>
+![Screenshot](./Screenshot%202025-03-23%20031121.png)
+
+
+### Conclusion
+
+By processing file chunks in parallel using multithreading, it significantly improves the speed of backup and restore operations. The implementation utilizes `ExecutorService` for thread management and `FileChannel` for I/O operations, showing better performance compared to single-threaded approaches.
